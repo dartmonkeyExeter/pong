@@ -48,14 +48,14 @@ while running:
     if ball_y <= 0 + 9 or ball_y >= 500 - 9:
         y_vel = -y_vel
     
-    if ball_x < 30:
+    if ball_x < player_one_x - 9:
         p2_points += 1
         ball_x = 250
         ball_y = 250
 
         x_vel = -5
         y_vel = 1
-    elif ball_x > 500-30:
+    elif ball_x > player_two_x + 9:
         p1_points += 1
         ball_x = 250
         ball_y = 250
