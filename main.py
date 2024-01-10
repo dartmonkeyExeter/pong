@@ -27,7 +27,7 @@ player_one_y = 250
 
 # Fix: Initialize player_two_y properly
 player_two_x = 460
-player_two_y = 250 - height // 2
+player_two_y = 250
 
 p1_points = 0
 p2_points = 0
@@ -55,6 +55,8 @@ while running:
 
         x_vel = -5
         y_vel = 1
+        player_one_y = 250
+        player_two_y = 250
     elif ball_x > player_two_x + 9:
         p1_points += 1
         ball_x = 250
@@ -62,6 +64,8 @@ while running:
 
         x_vel = -5
         y_vel = 1
+        player_one_y = 250
+        player_two_y = 250
     if (
         ball_x - 9 < player_one_x
         and ball_y + 9 > player_one_y
